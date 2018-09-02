@@ -3,12 +3,12 @@
 
 STORE "m" with 600 value
 STORE "a" with 2 value
-STORE "ΣF" with any value
+STORE "ΣF" without any value
 
   CALCULATE "m" times "a"
   SET "ΣF" value with calculation result
 
-DISPLAY "ΣF"
+DISPLAY "ΣF" by adding 'Newton' string
 */
 
 
@@ -17,9 +17,9 @@ DISPLAY "ΣF"
 
 STORE "year" to any number
 
-IF "year" mod 4 is equals to 0 && mod 100 equals any number
+IF "year" mod 4 is equals to 0 and mod 100 not equals 0
   DISPLAY "leap year"
-ELSE IF "year" mod 4 is equals to 0 && mod 100 equals to 0 && mod 400 equals to 0
+ELSE IF "year" mod 4 is equals to 0 and mod 100 equals to 0 and mod 400 equals to 0
   DISPLAY "leap year"
 ELSE
   DISPLAY "not leap year"
@@ -29,10 +29,10 @@ ELSE
 /*
 3. Laundry Day
 
-STORE "wash clothes" with 0
+STORE "washClothes" with 0
 
-WHILE "wash clothes" <=20
-  ADD "wash clothes" by 1
+WHILE "washClothes" less than 20
+  ADD "washClothes" by 1
 
 DISPLAY "washing time!"
 */
@@ -41,13 +41,13 @@ DISPLAY "washing time!"
 /*
 4. Periksa Kuku
 
-STORE  "students" to 0
-STORE "long nails"
+STORE  "student" to 0
 
-WHILE "students" <=40
-  ADD "students" by 1
-    IF "student" is "long nails"
-      DISPLAY "punished"
-    ELSE
-      DISPLAY "not punished"
+WHILE "student" less than equals to 40
+  STORE variable "longNails" with true value
+  ADD "student" by 1
+  IF "student" is equals to "longNails"
+    DISPLAY "punished"
+  ELSE
+    DISPLAY "not punished"
 */
