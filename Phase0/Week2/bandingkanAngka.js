@@ -1,7 +1,7 @@
 function bandingkanAngka(angka1, angka2) {
   // you can only write your code here!
   if (angka2 > angka1) {
-    return console.log('true')
+    return console.log(true)
   } else if (angka2 < angka1) {
     return console.log (false)
   } else {
