@@ -6,14 +6,20 @@ while (rows1 > 0) {
   }
 
 //2.
-var rows2;
+var rows2 = 5;
+var counter = 0
 
-for( rows2 = 5; rows2 > 0; rows2--){
-  for(var column2 = 5; column2 > 0; column2--){
-    console.log('*');
+while (rows2 > counter) {
+  var kolom = ''
+  var counterkolom = 0
+  while (counterkolom <= rows2) {
+    kolom = kolom + '*'
+    counterkolom = counterkolom + 1
   }
-console.log('');
+counter = counter + 1
+console.log(kolom);
 }
+
 
 //3.
 var rows3 = 5
@@ -28,5 +34,3 @@ while ( counter < rows3 ) {
 console.log(temp)
 counter = counter + 1
 }
-
-
